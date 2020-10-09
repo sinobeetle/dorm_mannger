@@ -50,7 +50,7 @@
         <h4 class="modal-title text-center" id="Register-title">注册</h4>
       </div>
       <div class="modal-body">
-        <form role="form" action="loginServlet" method="post" autocomplete="off" id="formregist">
+        <form role="form" action="RegisterServlet" method="post" autocomplete="off" id="formregist">
           <div class="form-group">
             <input type="text" class="form-control" placeholder="请输入用户名" name="username"
                    autofocus required>

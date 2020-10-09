@@ -41,7 +41,7 @@ public class loginServlet extends HttpServlet {
 	            }
 	            else
 	            {
-	                System.out.println("error");
+	                System.out.println("密码错误");
 	            }
 	        } catch (SQLException throwables) {
 	            throwables.printStackTrace();

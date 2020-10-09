@@ -5,14 +5,12 @@ import java.sql.SQLException;
 
 public class Logincheck {
     public boolean equalsElement(login l) throws SQLException {
-        sqlconnection.getsqlconnection();
-        String name;
-        String pwd;
-        name=Getdata.getElement("select Student_name from student","student_name",l.getName());
-        pwd=Getdata.getElement("select Student_pwd from student","student_pwd",l.getPwd());
-        if(l!=null && l.name.equals(name))
+        Getdata gta=new Getdata();
+        String name=gta.loginGet("select username from user","username",l.getName());
+        String pwd=gta.loginGet("select password from user","password",l.getPwd());
+        if(l!=null && l.getName().equals(name))
         {
-            if(l.pwd.equals(pwd))
+            if(l.getPwd().equals(pwd))
             {
                 return true;
             }

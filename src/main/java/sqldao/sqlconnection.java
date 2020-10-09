@@ -4,39 +4,30 @@ import java.sql.*;
 
 public class sqlconnection {
 
-    public static void getsqlconnection() throws SQLException {
-        Connection coon=null;
-        Statement stat=null;
-        try
-        {
+    public static Statement getsqlconnection() throws SQLException {
+        Connection coon = null;
+        Statement stat = null;
+        try {
             Class.forName("com.mysql.cj.jdbc.Driver");//加载sql驱动
             System.out.println("right");
-        }
-        catch(Exception e)
-        {
+        } catch (Exception e) {
             e.printStackTrace();
             System.out.println("error");
         }
-        String name ="root";
-        String pwd="wf981230";
-        String url="localhost";
+        String name = "dorm";
+        String pwd = "wf981230";
 
-        try
-        {
-            coon= DriverManager.getConnection("jdbc:mysql://localhost:3306/test?serverTimezone=UTC",name,pwd);
+        try {
+            coon = DriverManager.getConnection("jdbc:mysql://118.31.244.94:3306/dorm?serverTimezone=UTC", name, pwd);
             System.out.println("right");
-        }
-        catch (SQLException throwables) {
+        } catch (SQLException throwables) {
             throwables.printStackTrace();
             System.out.println("error");
         }
-        try
-        {
-            stat=coon.createStatement();
+        try {
+            stat = coon.createStatement();
             System.out.println("right");
-        }
-        catch (Exception e)
-        {
+        } catch (Exception e) {
             e.printStackTrace();
             System.out.println("error");
         }
@@ -47,13 +38,7 @@ public class sqlconnection {
 //        {
 //            System.out.println(rs.getString("student_id"));
 //        }
-        Getdata gta=new Getdata(stat);
+        return stat;
     }
-//    public static void main(String[] args) throws SQLException {
-//        getsqlconnection();
-//    }
-    public static void main(String[] args) throws SQLException
-    {
-    	getsqlconnection();
-    }
+
 }

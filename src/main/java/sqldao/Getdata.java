@@ -6,11 +6,10 @@ import java.sql.Statement;
 
 public class Getdata {
     static Statement stat=null;
-    public Getdata(Statement stat)
-    {
-        this.stat=stat;
+    public Getdata() throws SQLException {
+        this.stat=sqlconnection.getsqlconnection();
     }
-    public static String getElement(String sql,String element,String rightElement) throws SQLException {
+    public String loginGet(String sql,String element,String rightElement)throws SQLException {
         ResultSet resu= stat.executeQuery(sql);
         while(resu.next())
         {

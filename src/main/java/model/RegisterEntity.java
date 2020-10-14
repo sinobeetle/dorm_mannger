@@ -1,6 +1,6 @@
 package model;
 
-public class Register {
+public class RegisterEntity {
     String username;
     String password;
     String phone_number;

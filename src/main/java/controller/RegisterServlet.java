@@ -13,13 +13,13 @@ import java.sql.SQLException;
 @WebServlet("/RegisterServlet")
 public class RegisterServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        Register res=new Register();
+        RegisterEntity res=new RegisterEntity();
         res.setId(request.getParameter("id"));
         res.setPassword(request.getParameter("password"));
         res.setPhone_number(request.getParameter("phone_number"));
         res.setUsername(request.getParameter("username"));
         try {
-            RegisterInsert.insert(res);
+            RegisterModel.InsertRegisterData(res);
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }

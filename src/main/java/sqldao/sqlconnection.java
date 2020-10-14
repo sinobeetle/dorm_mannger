@@ -31,13 +31,6 @@ public class sqlconnection {
             e.printStackTrace();
             System.out.println("error");
         }
-
-//        String sql1="select * from student";
-//        ResultSet rs=stat.executeQuery(sql1);
-//        while(rs.next())
-//        {
-//            System.out.println(rs.getString("student_id"));
-//        }
         return stat;
     }
 

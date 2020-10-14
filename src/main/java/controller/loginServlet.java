@@ -9,8 +9,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import model.Logincheck;
-import model.login;
+import model.LoginCheck;
+import model.LoginEntity;
 
 /**
  * Servlet implementation class loginServlet
@@ -30,12 +30,12 @@ public class loginServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		 	login l=new login();
-	        l.setName(request.getParameter("username"));
-	        l.setPwd(request.getParameter("password"));
-	        Logincheck logck=new Logincheck();
+		 	LoginEntity login=new LoginEntity();//建立实体模型对象
+			login.setName(request.getParameter("username"));
+			login.setPwd(request.getParameter("password"));
+	        LoginCheck logck=new LoginCheck();
 	        try {
-	            if(logck.equalsElement(l))
+	            if(logck.equalsElement(login))
 	            {
 	                System.out.println("OK");
 	            }

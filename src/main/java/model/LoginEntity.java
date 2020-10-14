@@ -1,6 +1,6 @@
 package model;
 
-public class login {
+public class LoginEntity {
     String name=null;
     String pwd=null;
     public void setName(String name)

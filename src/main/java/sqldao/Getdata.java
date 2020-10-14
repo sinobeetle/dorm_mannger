@@ -9,13 +9,13 @@ public class Getdata {
     public Getdata() throws SQLException {
         this.stat=sqlconnection.getsqlconnection();
     }
-    public String loginGet(String sql,String element,String rightElement)throws SQLException {
+    public String GetLoginData(String sql,String LoginParameter,String realLoginParameter)throws SQLException {
         ResultSet resu= stat.executeQuery(sql);
         while(resu.next())
         {
-            if(rightElement.equals(resu.getString(element)))
+            if(realLoginParameter.equals(resu.getString(LoginParameter)))
             {
-                return rightElement;
+                return realLoginParameter;
             }
         }
        return "null";

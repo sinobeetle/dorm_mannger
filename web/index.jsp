@@ -12,8 +12,6 @@
   <!--    移动设备自适应-->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
-
-
 <body style=" background: url('img/L~NN_~[ZINEQH@YUJ8YWEWX.jpg') no-repeat fixed ; background-size: 100% 100%;">
 <div class="modal-dialog" action="http://www.baidu.com" style="margin-top: 10%;">
   <div class="modal-content">
@@ -73,6 +71,7 @@
       </div>
       <div class="modal-footer">
         <button type="submit" class="btn btn-primary" form="formregist">确认注册</button>
+
       </div>
     </div>
   </div>

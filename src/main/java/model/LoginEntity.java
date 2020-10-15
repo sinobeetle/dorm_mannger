@@ -3,6 +3,7 @@ package model;
 public class LoginEntity {
     String name=null;
     String pwd=null;
+
     public void setName(String name)
     {
         this.name=name;
@@ -19,4 +20,5 @@ public class LoginEntity {
     {
         return pwd;
     }
+
 }

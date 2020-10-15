@@ -8,35 +8,11 @@
         <script type="application/javascript" src="https://cdn.staticfile.org/jquery/3.5.1/jquery.js"></script>
         <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
         <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+        <script src="js/dormMannger.js"></script>
         <!--    移动设备自适应-->
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <script>
-            var username=null,password=null,jsonData;
-            function GetData()
-            {
-                username=$("#username").val();
-                password=$("#password").val();
-            }
-            function ToJSON()
-            {
-                jsonData={
-                    "username":username,
-                    "password":password
-                }
-            }
-                $(document).ready(function()
-                {
-                    $("#login").click(function()
-                    {
-                        GetData();
-                        ToJSON();
-                        $.post("loginServlet",jsonData,function (data,status)
-                        {
-                            alert("数据: \n" + data + "\n状态: " + status);
-                        })
-                    })
-                })
-        </script>
+
     </head>
 </head>
 <body style="background-image: url(./images/loginbg.png); background-repeat:no-repeat;background-size:100% 200%;-moz-background-size:100% 100%;">
@@ -47,7 +23,7 @@
                 登录
             </h4>
         </div>
-        <div class="modal-body">
+        <div class="modal-body" id="fwqf">
             <form role="form" autocomplete="off" method="post" action="#" id="formlogin">
                 <div class="form-group">
                     <input type="text" id="username" class="form-control" placeholder="用户名" name="username" autofocus >

@@ -5,7 +5,10 @@ public class RegisterEntity {
     String password;
     String phone_number;
     String id;
+    public RegisterEntity()
+    {
 
+    }
     public void setUsername(String username) {
         this.username = username;
     }

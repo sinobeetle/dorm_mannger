@@ -20,7 +20,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6658df6c-b1d1-4e5b-9a97-de4eabf239f5" name="Default Changelist" comment="11">
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_jetbrains_annotations_20_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/fastjson_1_2_74.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/fastjson-1.2.74.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_6_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_6_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_6_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_6_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_6_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_6_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_6_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_6_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dorm_mannger.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../dorm_mannger.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/controller/Servlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/controller/loginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/controller/loginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/model/Filter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/model/LoginCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/model/LoginCheck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/model/LoginEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/model/LoginEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/model/RegisterEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/model/RegisterEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/model/Servlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/web.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/dormMannger.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/dormMannger.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +52,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -55,6 +77,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -65,7 +88,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -77,6 +100,9 @@
       <option name="presentableId" value="Default" />
       <updated>1602681702076</updated>
       <workItem from="1602681703109" duration="14186000" />
+      <workItem from="1602769728715" duration="1203000" />
+      <workItem from="1602770944941" duration="21000" />
+      <workItem from="1602817745074" duration="14172000" />
     </task>
     <task id="LOCAL-00001" summary="11">
       <created>1602768993343</created>
@@ -99,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602769144576</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="11">
+      <created>1602769745253</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1602769745253</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,6 +148,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="11" />
@@ -125,14 +159,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="539" y="163" key="#HTTP_Proxy/0.0.1536.824@0.0.1536.824" timestamp="1602751106952" />
-    <state x="270" y="57" key="SettingsEditor" timestamp="1602769333639">
+    <state x="499" y="192" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper" timestamp="1602770315455">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="270" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1602769333639" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1602769164524">
+    <state x="499" y="192" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper/0.0.1536.824@0.0.1536.824" timestamp="1602770315455" />
+    <state x="270" y="57" key="SettingsEditor" timestamp="1602817871421">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1602769164524" />
+    <state x="270" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1602817871421" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1602769746856">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1602769746856" />
     <state x="573" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602767636001">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

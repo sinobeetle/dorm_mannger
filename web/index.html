@@ -10,6 +10,7 @@
         <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
         <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
         <script src="js/dormMannger.js"></script>
+<!--        <script src="js/dormMannger.js"></script>-->
         <!--    移动设备自适应-->
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -51,29 +52,29 @@
                 <h4 class="modal-title text-center" id="Register-title">注册</h4>
             </div>
             <div class="modal-body">
-                <form role="form" action="#" method="post" autocomplete="off" id="formregist">
+                <form role="form"   autocomplete="off" id="formregist">
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="请输入用户名" name="username"
+                        <input type="text" class="form-control" placeholder="请输入用户名" name="username" id="RegisterUserName"
                                autofocus required>
                     </div>
                     <div class="form-group">
-                        <input type="password" class="form-control" placeholder="请输入密码"
+                        <input type="password" class="form-control" placeholder="请输入密码" id="RegisterPassword"
                                name="password"
                                required>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="请输入手机号"
+                        <input type="text" class="form-control" placeholder="请输入手机号"    id="RegisterPhoneNumber"
                                name="phone_number"
                                required>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="请输入职工号" name="id"
+                        <input type="text" class="form-control" placeholder="请输入职工号" name="id"  id="RegisterId"
                                required>
                     </div>
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="submit" class="btn btn-primary" form="formregist">确认注册</button>
+                <button type="button" class="btn btn-primary" form="formregist" id="register">确认注册</button>
 
             </div>
         </div>

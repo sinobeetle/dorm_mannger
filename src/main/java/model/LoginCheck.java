@@ -9,12 +9,12 @@ public class LoginCheck {
         String username = null;
         String password=null;
         Getdata GetLoginData =new Getdata();
-        username= GetLoginData.GetLoginData("select username from user","username",l.getName());
-        password= GetLoginData.GetLoginData("select password from user","password",l.getPwd());
+        username= GetLoginData.GetLoginData("select username from user","username",l.getUsername());
+        password= GetLoginData.GetLoginData("select password from user","password",l.getPassword());
 
-        if(l.getName().equals(username))
+        if(l.getUsername().equals(username))
         {
-            if(l.getPwd().equals(password))
+            if(l.getPassword().equals(password))
             {
                 return true;
             }

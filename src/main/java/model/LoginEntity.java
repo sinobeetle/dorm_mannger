@@ -1,24 +1,26 @@
 package model;
 
 public class LoginEntity {
-    String name=null;
-    String pwd=null;
+    private String  username=null;
+    private String password=null;
+    public LoginEntity()
+    {
 
-    public void setName(String name)
-    {
-        this.name=name;
-    }
-    public void setPwd(String pwd)
-    {
-        this.pwd=pwd;
-    }
-    public String getName()
-    {
-        return name;
-    }
-    public String getPwd()
-    {
-        return pwd;
     }
 
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
 }

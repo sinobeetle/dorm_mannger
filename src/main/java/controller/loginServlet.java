@@ -1,6 +1,8 @@
 package controller;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.sql.SQLException;
 
@@ -9,8 +11,9 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
+import JsonDataProcess.*;
 import Status.Status;
+import com.alibaba.fastjson.JSON;
 import model.LoginCheck;
 import model.LoginEntity;
 
@@ -35,24 +38,36 @@ public class loginServlet extends HttpServlet {
 			request.setCharacterEncoding("utf-8");
 			response.setContentType("text/html;charset=utf-8");
 			PrintWriter out=response.getWriter();
-			LoginCheck logck=null;
-		 	LoginEntity login=new LoginEntity();//建立实体模型对象
-		    login.setName(request.getParameter("username"));
-		    login.setPwd(request.getParameter("password"));
-			System.out.println(login.getName());
-			System.out.println(login.getPwd());
-		    if(login.getPwd()==null||login.getName()==null||login.getPwd()==""||login.getName()=="")
+			LoginCheck ToCheckLoginData=null;
+			LoginEntity LoginData=null;
+			BufferedReader ReadString=new BufferedReader(new InputStreamReader(request.getInputStream()));//建立流通道
+			JsonDataProcess ProcessJson=new JsonDataProcess(ReadString);//实例化JsonDataProcess将数据流传入并处理
+			if(ProcessJson.WhetherDataIsNull())
+			{
+				Status.NoCompleteParameters(out);
+				ProcessJson.CloseStream();
+				return;
+			}
+			else
+			{
+				System.out.println(ProcessJson.ReturnDataToController());
+				LoginData= JSON.parseObject(ProcessJson.ReturnDataToController(),LoginEntity.class);//反序列化json为javabean对象
+				ProcessJson.CloseStream();
+			}
+			System.out.println(LoginData.getPassword());
+			System.out.println(LoginData.getUsername());
+		    if(LoginData.getPassword()==null||LoginData.getUsername()==null)
 			{
 				Status.NoCompleteParameters(out);
 				return;                           //判断传参是否完整，若不完整，返回json
 			}
 		    else
 			{
-				 logck=new LoginCheck();		//传参正确，进入实例化LoginCheck对象
+				ToCheckLoginData=new LoginCheck();		//传参正确，实例化LoginCheck对象
 			}
 			try
 			{
-				if(logck.equalsElement(login))
+				if(ToCheckLoginData.equalsElement(LoginData))
 				{
 					Status.LoginSuccessJson(out);	//验证成功
 				}
@@ -73,5 +88,4 @@ public class loginServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		doGet(request, response);
 	}
-
 }
